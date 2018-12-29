@@ -1,0 +1,25 @@
+
+/*----------------------------------MAP-----------------------------------*/
+div#map {
+  height: 400px;  /* The height is 400 pixels */
+  width: 100%;  /* The width is the width of the web page */
+  padding: 3rem;
+ }
+
+/*-----------------------------------MAIN------------------------------------*/
+header, nav, main, footer {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+main {
+  figure.photo {width: 50%-$gutterDbl; margin: .5rem $gutter; float: left;}
+
+div.blog article {
+  float: left;
+  width: 50%-$gutterDbl;
+}
+div.blog article:nth-child(2n+1) {
+  clear: left;
+}
+  }//end main

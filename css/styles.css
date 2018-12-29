@@ -1,0 +1,365 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/*  apply a natural box layout model to all elements  */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*---------------------------------BODY---------------------------------------*/
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 16px; }
+
+/*---------------------------------HEADER-------------------------------------*/
+div#headerwrapper {
+  background-color: #424e64; }
+
+header {
+  color: #bbc;
+  padding: 1rem 2%; }
+  header form {
+    float: right; }
+  header form input {
+    width: 6rem;
+    border-radius: 10px;
+    margin-right: 2px;
+    padding: .2rem;
+    border: none;
+    transition: width .5s;
+    outline: none; }
+  header form input:focus {
+    width: 8rem; }
+  header h1 {
+    font-size: 2rem;
+    font-weight: 700; }
+  header h1 a {
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #bbc; }
+  header h2 {
+    font-size: 1.1rem;
+    font-weight: 300; }
+
+/*--------------------------------NAVIGATION----------------------------------*/
+div#navwrapper {
+  background-color: #bbc;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
+
+nav ul li {
+  float: left;
+  width: 25%;
+  border-right: 1px solid rgba(0, 0, 0, 0.3); }
+nav ul li:first-child {
+  border-left: 1px solid rgba(0, 0, 0, 0.3); }
+nav ul li:last-child {
+  border-right: 1px solid rgba(0, 0, 0, 0.3); }
+nav ul li a {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  padding: .5rem 0;
+  color: #424e64;
+  text-decoration: none;
+  transition: background 0.75s ease, color 0.75s ease; }
+
+ul li.active a {
+  background-color: #9e9eb6; }
+
+ul li a:hover {
+  color: #bbc;
+  background-color: #424e64; }
+
+/*-----Clearfix: Force an Element not to collapse -------*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/*----------------------------------MAP-----------------------------------*/
+div#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+  padding: 3rem; }
+
+/*-----------------------------------MAIN------------------------------------*/
+main figure.banner {
+  width: 100%; }
+main figure.banner img {
+  width: 100%; }
+main h1 {
+  font-size: 2rem;
+  margin: 1rem 0 0 2%;
+  color: #424e64; }
+main h2 {
+  font-size: 1.5rem;
+  margin: 0.75rem 0 0 2%;
+  color: #566683; }
+main h3 {
+  font-size: 1.2rem;
+  color: #6d7f9f; }
+main p {
+  line-height: 130%;
+  color: #35373a; }
+main hr.FadeAway {
+  background: linear-gradient(to right, #1e5799 0%, rgba(66, 78, 100, 0.98) 2%, rgba(41, 137, 216, 0.5) 50%, rgba(32, 124, 202, 0.49) 51%, rgba(66, 78, 100, 0) 100%);
+  height: 2px;
+  border: none;
+  margin: 0 2%; }
+main figure.photo {
+  width: 96%;
+  margin: 0.5rem 2%; }
+main figure.photo img {
+  width: 100%; }
+main figure.photo figcaption {
+  text-align: center;
+  color: #424e64; }
+
+figure.phototable img {
+  width: 100%;
+  padding: 2rem; }
+
+figure.phototable img:hover {
+  opacity: 0.8; }
+
+.button {
+  background-color: #424e64;
+  color: #bbc;
+  padding: 0.9rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.8rem; }
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer; }
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px; }
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent; }
+
+div.blog article {
+  margin: 1rem 2%;
+  width: 96%; }
+
+div.pop {
+  background-color: #f1c517;
+  text-align: center;
+  clear: both;
+  padding: 1rem 0; }
+  div.pop .title {
+    font-size: 2.5rem;
+    font-weight: 700; }
+  div.pop .subtitle {
+    font-size: 2rem;
+    font-weight: 300; }
+  div.pop .copy {
+    padding: .5rem 0; }
+  div.pop .copy span {
+    font-size: 3rem;
+    color: #424e64;
+    font-weight: 700; }
+
+/*----------------------------------FOOTER-----------------------------------*/
+div#footerwrapper {
+  background-color: #424e64; }
+
+footer {
+  width: 100%; }
+  footer p {
+    text-align: center;
+    color: #bbc;
+    padding: .75rem 0;
+    font-size: .9rem; }
+  footer p a {
+    color: #bbc; }
+
+@media only screen and (min-width: 35rem) {
+  /*----------------------------------MAP-----------------------------------*/
+  div#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+    padding: 3rem; }
+
+  /*-----------------------------------MAIN------------------------------------*/
+  header, nav, main, footer {
+    max-width: 60rem;
+    margin: 0 auto; }
+
+  main figure.photo {
+    width: 46%;
+    margin: 0.5rem 2%;
+    float: left; }
+  main div.blog article {
+    float: left;
+    width: 46%; }
+  main div.blog article:nth-child(2n+1) {
+    clear: left; } }
+@media only screen and (min-width: 60rem) {
+  /*--------------------------------BODY------------------------------------*/
+  header, nav, main, footer {
+    max-width: 60rem;
+    margin: 0 auto; }
+
+  body {
+    background-image: url(../images/polonez_car.png); }
+
+  /*----------------------------------MAP-----------------------------------*/
+  div#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+    padding: 3rem; }
+
+  /*--------------------------------NAVIGATION----------------------------------*/
+  nav ul {
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    border-right: 1px solid rgba(0, 0, 0, 0.3); }
+  nav ul li {
+    width: auto; }
+  nav ul li:last-child {
+    border-right: 1px solid rgba(0, 0, 0, 0.3); }
+  nav ul li a {
+    padding: .5rem 1rem; }
+
+  /*----------------------------------MAP-----------------------------------*/
+  div#map {
+    height: 800px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */ }
+
+  /*-----------------------------------MAIN------------------------------------*/
+  main figure.photo {
+    width: 21%;
+    margin: 0.5rem 2%;
+    float: left; }
+  main div.blog article {
+    float: left;
+    width: 29.33%; }
+  main div.blog article:nth-child(2n+1) {
+    clear: none; }
+  main div.blog article:nth-child(3n+1) {
+    clear: left; } }
